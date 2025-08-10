@@ -47,19 +47,19 @@ API_LIST = [
     {
         "url": "https://ss.binge.buzz/otp/send/login",
         "method": "POST",
-        "headers": {"Content-Type": "জয় বাংলা"},
+        "headers": {"Content-Type": "application/x-www-form-urlencoded"},
         "data": lambda num: f"phone={num}"
     },
     {
         "url": lambda num: f"https://api.daktarbhai.com/api/v2/otp/generate?=&api_key=BUFWICFGGNILMSLIYUVH&api_secret=WZENOMMJPOKHYOMJSPOGZNAGMPAEZDMLNVXGMTVE&mobile=%2B88{num}&platform=app&activity=login",
         "method": "POST",
-        "headers": {"Content-Type": "জয় বাংলা"},
+        "headers": {"Content-Type": "application/json", "Content-Length": "0"},
         "data": None
     },
     {
         "url": lambda num: f"https://stage.bioscopelive.com/en/login/send-otp?phone=88{num}&operator=bd-otp",
         "method": "GET",
-        "headers": {   "জয় বাংলা "},
+        "headers": {},
         "data": None
     },
     {
@@ -71,13 +71,13 @@ API_LIST = [
     {
         "url": "https://addabaji.mobi/twocups-v1-robi/otp.php",
         "method": "POST",
-        "headers": {"Content-Type": "জয় বাংলা"},
+        "headers": {"Content-Type": "application/x-www-form-urlencoded"},
         "data": lambda num: f"msisdn={num}"
     },
     {
         "url": "https://developer.quizgiri.xyz/api/v2.0/send-otp",
         "method": "POST",
-        "headers": { "জয় বাংলা"},
+        "headers": {"Content-Type": "জয় বাংলা "},
         "data": lambda num: f'{{"phone":"{num}","country_code":"+880","fcm_token":null}}'
     }
 ]
