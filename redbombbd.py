@@ -77,7 +77,7 @@ API_LIST = [
     {
         "url": "https://developer.quizgiri.xyz/api/v2.0/send-otp",
         "method": "POST",
-        "headers": {"Content-Type:" "জয় বাংলা"},
+        "headers": { "জয় বাংলা"},
         "data": lambda num: f'{{"phone":"{num}","country_code":"+880","fcm_token":null}}'
     }
 ]
